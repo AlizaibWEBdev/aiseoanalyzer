@@ -27,27 +27,30 @@
 
 
     <meta property="og:title" content="AI SEO Analyzer - Advanced AI Tools for Website Optimization">
-<meta property="og:description" content="Enhance your website's SEO with our AI-powered analyzer. Get actionable insights and recommendations to optimize your website's performance and visibility.">
-<meta property="og:image" content="robob.png"> 
-<meta property="og:url" content="https://aiseoanalyzer.vercel.app/"> <!-- Replace with the URL of your page -->
-<meta property="og:type" content="website">
+    <meta property="og:description"
+        content="Enhance your website's SEO with our AI-powered analyzer. Get actionable insights and recommendations to optimize your website's performance and visibility.">
+    <meta property="og:image" content="robob.png">
+    <meta property="og:url" content="https://aiseoanalyzer.vercel.app/"> <!-- Replace with the URL of your page -->
+    <meta property="og:type" content="website">
 
 
 
-<meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="AI SEO Analyzer - Advanced AI Tools for Website Optimization">
-<meta name="twitter:description" content="Enhance your website's SEO with our AI-powered analyzer. Get actionable insights and recommendations to optimize your website's performance and visibility.">
-<meta name="twitter:image" content="robob.png"> <!-- Replace with a URL to an image that represents your content -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="AI SEO Analyzer - Advanced AI Tools for Website Optimization">
+    <meta name="twitter:description"
+        content="Enhance your website's SEO with our AI-powered analyzer. Get actionable insights and recommendations to optimize your website's performance and visibility.">
+    <meta name="twitter:image" content="robob.png"> <!-- Replace with a URL to an image that represents your content -->
 
-<meta name="author" content="Alizaib">
-
-
-
-<link rel="canonical" href="https://aiseoanalyzer.vercel.app/"> <!-- Replace with the URL of your page -->
+    <meta name="author" content="Alizaib">
 
 
 
-<meta name="google-site-verification" content="bTRlMgrBbckq_jgRj0Eiw0ds2p2lBt0zADKkc6Ydch0"> <!-- For Google Search Console verification -->
+    <link rel="canonical" href="https://aiseoanalyzer.vercel.app/"> <!-- Replace with the URL of your page -->
+
+
+
+    <meta name="google-site-verification" content="bTRlMgrBbckq_jgRj0Eiw0ds2p2lBt0zADKkc6Ydch0">
+    <!-- For Google Search Console verification -->
 
 
 
@@ -57,33 +60,33 @@
 
     <link rel="stylesheet" href="style.css">
 </head>
+
 <script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "WebSite",
       "name": "AI SEO Analyzer",
       "url": "https://aiseoanalyzer.vercel.app/",
-      "description": "Enhance your website's SEO with our AI-powered analyzer. Get actionable insights and recommendations to optimize your website's performance and visibility.",
-     
+      "description": "Enhance your website's SEO with our AI-powered analyzer. Get actionable insights and recommendations to optimize your website's performance and visibility."
     }
-    </script>
-    
-    <script type="application/ld+json">
+</script>
+<script type="application/ld+json">
     {
       "@context": "https://schema.org/",
       "@type": "Organization",
       "name": "AI SEO Analyzer",
       "url": "https://aiseoanalyzer.vercel.app/",
-      "logo": "https://aiseoanalyzer.vercel.app/robob.png", 
+      "logo": "https://aiseoanalyzer.vercel.app/robob.png",
       "contactPoint": {
         "@type": "ContactPoint",
         "contactType": "Customer Service",
-        "telephone": "03208757582", 
-        "email": "Alizaib.web.dev@gmail.con" 
+        "telephone": "03208757582",
+        "email": "Alizaib.web.dev@gmail.com"
       }
     }
     </script>
-    
+
+
 <body>
     <header>
         <nav>
@@ -96,22 +99,22 @@
 
     <main>
         <div class="hero card">
-           <div class="center">
-            <div class="robot-head">
-                <div class="lines">
-                    <div class="line"></div>
-                    <div class="line"></div>
-                </div>
-                <div class="googles">
-                    <div class="eye left-eye">
-                        <div class="pupil"></div>
+            <div class="center">
+                <div class="robot-head">
+                    <div class="lines">
+                        <div class="line"></div>
+                        <div class="line"></div>
                     </div>
-                    <div class="eye right-eye">
-                        <div class="pupil"></div>
+                    <div class="googles">
+                        <div class="eye left-eye">
+                            <div class="pupil"></div>
+                        </div>
+                        <div class="eye right-eye">
+                            <div class="pupil"></div>
+                        </div>
                     </div>
                 </div>
             </div>
-           </div>
             <h1>AI SEO Analyzer</h1>
             <p>Transform your website’s SEO strategy with our advanced AI-powered SEO analyzer. Gain valuable insights,
                 optimize keywords, and enhance your site's visibility with ease.</p>
@@ -284,51 +287,51 @@
 
 
         let timeout;
-const pupils = document.querySelectorAll('.pupil');
-const moveInterval = 3000; // Interval to update random movement in milliseconds
-const moveRange = 12; // Maximum distance for pupil movement
+        const pupils = document.querySelectorAll('.pupil');
+        const moveInterval = 3000; // Interval to update random movement in milliseconds
+        const moveRange = 12; // Maximum distance for pupil movement
 
-function movePupilsRandomly() {
-    const angle = Math.random() * 2 * Math.PI;
-    pupils.forEach(pupil => {
-        const eye = pupil.parentElement;
-        const rect = eye.getBoundingClientRect();
-        const eyeX = rect.left + rect.width / 2;
-        const eyeY = rect.top + rect.height / 2;
-        
-        // Generate random angle
-       
-        
-        // Move pupil
-        pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * moveRange}px, ${Math.sin(angle) * moveRange}px)`;
-    });
-}
+        function movePupilsRandomly() {
+            const angle = Math.random() * 2 * Math.PI;
+            pupils.forEach(pupil => {
+                const eye = pupil.parentElement;
+                const rect = eye.getBoundingClientRect();
+                const eyeX = rect.left + rect.width / 2;
+                const eyeY = rect.top + rect.height / 2;
 
-// Move pupils when mouse is not moving
-function startRandomMovement() {
-    movePupilsRandomly(); // Initial random movement
-    setInterval(movePupilsRandomly, moveInterval);
-}
+                // Generate random angle
 
-document.addEventListener('mousemove', (event) => {
-    clearTimeout(timeout);
-    const { clientX: mouseX, clientY: mouseY } = event;
-    
-    pupils.forEach(pupil => {
-        const eye = pupil.parentElement;
-        const rect = eye.getBoundingClientRect();
-        const eyeX = rect.left + rect.width / 2;
-        const eyeY = rect.top + rect.height / 2;
-        const angle = Math.atan2(mouseY - eyeY, mouseX - eyeX);
 
-        pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * moveRange}px, ${Math.sin(angle) * moveRange}px)`;
-    });
+                // Move pupil
+                pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * moveRange}px, ${Math.sin(angle) * moveRange}px)`;
+            });
+        }
 
-    timeout = setTimeout(startRandomMovement, moveInterval + 100); // Start random movement after a delay
-});
+        // Move pupils when mouse is not moving
+        function startRandomMovement() {
+            movePupilsRandomly(); // Initial random movement
+            setInterval(movePupilsRandomly, moveInterval);
+        }
 
-// Start random movement when page loads
-window.onload = startRandomMovement;
+        document.addEventListener('mousemove', (event) => {
+            clearTimeout(timeout);
+            const { clientX: mouseX, clientY: mouseY } = event;
+
+            pupils.forEach(pupil => {
+                const eye = pupil.parentElement;
+                const rect = eye.getBoundingClientRect();
+                const eyeX = rect.left + rect.width / 2;
+                const eyeY = rect.top + rect.height / 2;
+                const angle = Math.atan2(mouseY - eyeY, mouseX - eyeX);
+
+                pupil.style.transform = `translate(-50%, -50%) translate(${Math.cos(angle) * moveRange}px, ${Math.sin(angle) * moveRange}px)`;
+            });
+
+            timeout = setTimeout(startRandomMovement, moveInterval + 100); // Start random movement after a delay
+        });
+
+        // Start random movement when page loads
+        window.onload = startRandomMovement;
 
 
     </script>
