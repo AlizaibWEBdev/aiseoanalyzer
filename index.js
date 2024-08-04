@@ -7,7 +7,7 @@ require('dotenv').config();
 
 
 const app = express();
-app.set('views', __dirname + '/../views');
+app.set("views", __dirname + "/views");
 app.use(express.static(path.join(__dirname, 'public')));
 const port = 3000;
 
