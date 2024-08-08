@@ -14,7 +14,7 @@
   ],
   "functions": {
     "/fetch": {
-      "maxDuration": 30
+      "maxDuration": 20
     }
   }
 }
